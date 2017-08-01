@@ -11,3 +11,5 @@
 [3、Postman Interceptor](https://github.com/wtbu703/simple/issues/3 "3、Postman Interceptor")
 
 [4、MySQL按条件计数](https://github.com/wtbu703/simple/issues/4 "4、MySQL按条件计数")
+
+[5、Laravel的Input Facade与Request Facade与Request](https://github.com/wtbu703/simple/issues/5 "5、Laravel的Input Facade与Request Facade与Request")
