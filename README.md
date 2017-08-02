@@ -29,6 +29,12 @@
 
 [7、关于使用工具](https://github.com/wtbu703/simple/issues/7 "7、关于使用工具")
 
+[8、MyISAM引擎与InnoDB引擎的区别](https://github.com/wtbu703/simple/issues/8 "8、MyISAM引擎与InnoDB引擎的区别")
+
+[9、数据库优化](https://github.com/wtbu703/simple/issues/9 "9、数据库优化")
+
+[10、求两个日期的差数](https://github.com/wtbu703/simple/issues/10 "10、求两个日期的差数")
+
 **About**
 ------------
 Email: liluoao@qq.com or lla@rmlx.cn
