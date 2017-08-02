@@ -13,3 +13,7 @@
 [4、MySQL按条件计数](https://github.com/wtbu703/simple/issues/4 "4、MySQL按条件计数")
 
 [5、Laravel的Input Facade与Request Facade与Request](https://github.com/wtbu703/simple/issues/5 "5、Laravel的Input Facade与Request Facade与Request")
+
+[6、关于代码风格规范](https://github.com/wtbu703/simple/issues/6 "6、关于代码风格规范")
+
+[7、关于使用工具](https://github.com/wtbu703/simple/issues/7 "7、关于使用工具")
