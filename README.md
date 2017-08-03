@@ -14,6 +14,13 @@
 
 **List:**
 ------------
+可以按分类查询：
+- [PHP](https://github.com/wtbu703/simple/issues?q=label:php)
+- [MySQL](https://github.com/wtbu703/simple/issues?q=label:mysql)
+- [Laravel](https://github.com/wtbu703/simple/issues?q=label:laravel)
+
+------------
+**详细列表：**
 
 [1、关于排序值](https://github.com/wtbu703/simple/issues/1 "1、关于排序值")
 
