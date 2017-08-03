@@ -4,7 +4,7 @@
 
 持续更新中，觉得不错的可以点个 `star` 收藏订阅
 
-文章在 Issues 中，也可以点击下面链接进行跳转
+文章在 [Issues](https://github.com/wtbu703/simple/issues) 中，也可以点击下面链接进行跳转
 
 **Blog**
 ------------
@@ -41,6 +41,8 @@
 [9、数据库优化](https://github.com/wtbu703/simple/issues/9 "9、数据库优化")
 
 [10、求两个日期的差数](https://github.com/wtbu703/simple/issues/10 "10、求两个日期的差数")
+
+[11、计算两个文件的相对路径](https://github.com/wtbu703/simple/issues/11 "11、计算两个文件的相对路径")
 
 **About**
 ------------
