@@ -44,6 +44,10 @@
 
 [11、计算两个文件的相对路径](https://github.com/wtbu703/simple/issues/11 "11、计算两个文件的相对路径")
 
+[12、Quicksort in PHP](https://github.com/wtbu703/simple/issues/12 "12、Quicksort in PHP")
+
+[13、Get File Extension](https://github.com/wtbu703/simple/issues/13 "13、Get File Extension")
+
 **About**
 ------------
 Email: liluoao@qq.com or lla@rmlx.cn
