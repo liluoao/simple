@@ -48,6 +48,11 @@
 
 [13、Get File Extension](https://github.com/wtbu703/simple/issues/13 "13、Get File Extension")
 
+[14、Laravel Error & Log](https://github.com/wtbu703/simple/issues/14 "14、Laravel Error & Log")
+
+[15、Laravel Eloquent ORM Relationship](https://github.com/wtbu703/simple/issues/15 "15、Laravel Eloquent ORM Relationship")
+
 **About**
 ------------
-Email: liluoao@qq.com or lla@rmlx.cn
+Email: liluoao@qq.com 
+or lla@rmlx.cn
