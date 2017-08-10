@@ -52,7 +52,9 @@
 
 [15、Laravel Eloquent ORM Relationship](https://github.com/wtbu703/simple/issues/15 "15、Laravel Eloquent ORM Relationship")
 
-[16、如何架构千万级、亿级PV的平台？](https://github.com/wtbu703/simple/issues/16 "16、如何架构千万级、亿级PV的平台？")
+[16、如何架构千万级、亿级PV的平台](https://github.com/wtbu703/simple/issues/16 "16、如何架构千万级、亿级PV的平台")
+
+[17、如何重构“箭头型”代码](https://github.com/wtbu703/simple/issues/17 "17、如何重构“箭头型”代码")
 
 **About**
 ------------
