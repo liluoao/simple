@@ -52,7 +52,7 @@
 
 [17、如何重构“箭头型”代码](https://github.com/wtbu703/simple/issues/17 "17、如何重构“箭头型”代码")
 
-[18、Laravel Config](https://github.com/wtbu703/simple/issues/18 "18、Laravel Config)
+[18、Laravel Config](https://github.com/wtbu703/simple/issues/18 "18、Laravel Config")
 
 **About**
 ------------
