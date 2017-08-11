@@ -54,6 +54,8 @@
 
 [18、Laravel Config](https://github.com/wtbu703/simple/issues/18 "18、Laravel Config")
 
+[19、TINYINT(1) or ENUM( true , false)](https://github.com/wtbu703/simple/issues/19 "19、TINYINT(1) or ENUM( true , false)")
+
 **About**
 ------------
 Email: liluoao@qq.com 
