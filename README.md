@@ -14,6 +14,8 @@
 - [PHP](https://github.com/wtbu703/simple/issues?q=label:php)
 - [MySQL](https://github.com/wtbu703/simple/issues?q=label:mysql)
 - [Laravel](https://github.com/wtbu703/simple/issues?q=label:laravel)
+- [javascript](https://github.com/wtbu703/simple/issues?q=label:javascript)
+- [tip](https://github.com/wtbu703/simple/issues?q=label:tip)
 
 ------------
 **详细列表：**
@@ -55,6 +57,8 @@
 [18、Laravel Config](https://github.com/wtbu703/simple/issues/18 "18、Laravel Config")
 
 [19、TINYINT(1) or ENUM( true , false)](https://github.com/wtbu703/simple/issues/19 "19、TINYINT(1) or ENUM( true , false)")
+
+[20、ES6 Promise](https://github.com/wtbu703/simple/issues/20 "20、ES6 Promise")
 
 **About**
 ------------
