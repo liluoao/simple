@@ -60,6 +60,8 @@
 
 [20、ES6 Promise](https://github.com/wtbu703/simple/issues/20 "20、ES6 Promise")
 
+[21、Vue.js Tips](https://github.com/wtbu703/simple/issues/21 "21、Vue.js Tips")
+
 **About**
 ------------
 Email: liluoao@qq.com 
