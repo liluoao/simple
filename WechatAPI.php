@@ -67,15 +67,13 @@ class WechatAPI {
      * @return mixed
      */
     public function get($url, array $options = []) {
-        $options = array_merge([
-            'access_token' => $this->getAccessToken(),
-        ], $options);
+        $options = array_merge(self::$defaults, $options);
 
         return $this->requestBuild('GET', $url, ['query' => $options, 'verify' => '../resources/assets/cacert.pem']);
     }
 
     /**
-     * post请求
+     * post请求 + get参数
      *
      * @param $url
      * @param array $options
@@ -83,11 +81,14 @@ class WechatAPI {
      */
     public function post($url, array $options = []) {
         $key = is_array($options) ? 'form_params' : 'body';
-        $options = array_merge([
-            'access_token' => $this->getAccessToken(),
-        ], $options);
+        $options = array_merge(self::$defaults, $options);
+        $AccessToken = $options['access_token'];
+        unset($options['access_token']);
 
-        return $this->requestBuild('POST', $url, [$key => $options, 'verify' => '../resources/assets/cacert.pem']);
+        return $this->requestBuild('POST', $url . "?access_token=$AccessToken", [
+            $key => $options,
+            'verify' => '../resources/assets/cacert.pem'
+        ]);
     }
 
     /**
@@ -105,12 +106,23 @@ class WechatAPI {
     }
 
     /**
-     * 获取AccessToken
+     * 获取应用的AccessToken
      *
      * @return string
      */
-    public function getAccessToken() {
-        $accessToken = new AccessToken(config('app.work_weixin_corp_id'), 'rdhi9Ef6F1aB2OK4WK8Ck7NsbA7C25g58chRTHpSVBE');
+    public function getAppAccessToken() {
+        $accessToken = new AccessToken(config('app.work_weixin_corp_id'), '这是Secret');
+
+        return $accessToken->getToken();
+    }
+
+    /**
+     * 获取通讯录的AccessToken
+     *
+     * @return string
+     */
+    public function getAddressBookAccessToken() {
+        $accessToken = new AccessToken(config('app.work_weixin_corp_id'), '这是Secret');
 
         return $accessToken->getToken();
     }
