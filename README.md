@@ -66,6 +66,8 @@
 
 [23、Intervention Image](https://github.com/wtbu703/simple/issues/23 "23、Intervention Image")
 
+[24、PHP的部分array函数](https://github.com/wtbu703/simple/issues/24 "24、PHP的部分array函数")
+
 **About**
 ------------
 Email: liluoao@qq.com
