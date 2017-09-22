@@ -68,6 +68,8 @@
 
 [24、PHP的部分array函数](https://github.com/wtbu703/simple/issues/24 "24、PHP的部分array函数")
 
+[25、Laravel Excel](https://github.com/wtbu703/simple/issues/25 "25、Laravel Excel")
+
 **About**
 ------------
 Email: liluoao@qq.com
