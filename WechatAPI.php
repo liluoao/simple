@@ -10,9 +10,11 @@
 namespace Rmlx\Business\Api;
 
 use GuzzleHttp\Client;
+use Rmlx\Business\Base;
 use Rmlx\Business\Qywx\AccessToken;
+use Rmlx\Exceptions\ApiException;
 
-class WechatAPI {
+class QyWechatAPI extends Base {
 
     /**
      * http client
@@ -30,6 +32,15 @@ class WechatAPI {
 
     const GET = 'GET';
     const POST = 'POST';
+
+    /**
+     * Base constructor.
+     */
+    public function __construct() {
+        //设置log名称
+        $this->setLogNamePath('api_request', 'api_log');
+        parent::__construct();
+    }
 
     /**
      * 获取Client
@@ -98,32 +109,29 @@ class WechatAPI {
      * @param $url
      * @param array $args
      * @return mixed
+     * @throws ApiException
      */
     public function callApi($method, $url, array $args) {
+        $this->log->debug('请求参数',$args);
         $contents = call_user_func_array([$this, $method], [$url, $args]);
-
+        if (empty($contents)) {
+            $this->log->error('返回结果',json_decode($contents,true));
+            throw new ApiException(400, 'Request fail. response: ' . json_encode($contents, JSON_UNESCAPED_UNICODE));
+        }
+        $this->log->debug('返回结果',json_decode($contents,true));
         return $contents;
     }
 
     /**
      * 获取应用的AccessToken
      *
+     * @param $corpId
+     * @param $corpSecret
      * @return string
      */
-    public function getAppAccessToken() {
-        $accessToken = new AccessToken(config('app.work_weixin_corp_id'), '这是Secret');
+    public function getAccessToken($corpId, $corpSecret) {
+        $accessToken = new AccessToken($corpId, $corpSecret);
 
-        return $accessToken->getToken();
-    }
-
-    /**
-     * 获取通讯录的AccessToken
-     *
-     * @return string
-     */
-    public function getAddressBookAccessToken() {
-        $accessToken = new AccessToken(config('app.work_weixin_corp_id'), '这是Secret');
-
-        return $accessToken->getToken();
+        return $accessToken->getToken(true);
     }
 }
