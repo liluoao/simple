@@ -84,7 +84,7 @@ class QyWechatAPI extends Base {
     }
 
     /**
-     * post请求 + get参数
+     * post请求 + get参数AccessToken
      *
      * @param $url
      * @param array $options
