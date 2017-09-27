@@ -1,28 +1,9 @@
 <?php
 
-/**
- * 企业微信控制器
- *
- * @Author: liluoao
- * @Created: 2017/9/4 11:10
- */
-
-namespace App\Http\Controllers\Qywx;
-
-use App\Http\Requests\Order\QywxOrder;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Session;
-use Rmlx\Business\Api\ApiServer;
-use Rmlx\Business\ErrorMessage;
-use Rmlx\Business\Order\Order as BasicOrder;
-use Rmlx\Business\Queue\Queue as BasicQueue;
-use Rmlx\Business\Qywx\Order;
-use Rmlx\Business\Qywx\Queue;
-use Rmlx\Business\Qywx\Qywx;
-use Rmlx\Business\Qywx\User;
-use Rmlx\Models\System\AdminModel;
-use Rmlx\Models\System\MerchantModel;
+use ErrorMessage;
 
 class QywxController {
 
