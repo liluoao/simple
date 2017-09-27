@@ -1,17 +1,8 @@
 <?php
 
-/**
- * AccessToken
- *
- * @Author: liluoao
- * @Created: 2017/8/18 17:18
- */
-
-namespace Rmlx\Business\Qywx;
-
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Cache;
-use Rmlx\Exceptions\ApiException;
+use ApiException;
 
 class AccessToken {
 
