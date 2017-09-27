@@ -1,18 +1,11 @@
 <?php
 
-/**
- * 企业微信API
- *
- * @Author: liluoao
- * @Created: 2017/8/28 15:39
- */
-
 namespace Rmlx\Business\Api;
 
 use GuzzleHttp\Client;
-use Rmlx\Business\Base;
-use Rmlx\Business\Qywx\AccessToken;
-use Rmlx\Exceptions\ApiException;
+use Base;
+use AccessToken;
+use ApiException;
 
 class QyWechatAPI extends Base {
 
