@@ -1,18 +1,9 @@
 <?php
 
-/**
- * 企业微信逻辑类
- *
- * @Author: liluoao
- * @Created: 2017/9/4 14:41
- */
-
-namespace Rmlx\Business\Qywx;
-
 use Illuminate\Support\Facades\Cache;
-use Rmlx\Business\Api\QyWechatAPI;
-use Rmlx\Models\System\MerchantQywx;
-use Rmlx\Models\System\MerchantQywxApp;
+use QyWechatAPI;
+use MerchantQywx;
+use MerchantQywxApp;
 
 class Qywx {
 
@@ -170,126 +161,5 @@ class Qywx {
         $data = $api->callApi('GET', self::API_USER_GET, ['userid' => $userId, 'access_token' => $accessToken]);
 
         return $data;
-    }
-
-    /**
-     * @param $source
-     * @return array
-     */
-    public function getSignPackage($source) {
-        // 获取ticket值
-        $jsapiTicket = $this->getJsApiTicket();
-
-        // 注意 URL 一定要动态获取，不能 hardcode.
-        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-
-        if ($source) {
-            $url = $_SERVER['HTTP_REFERER'];
-        } else {
-            $url = "{$protocol}{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
-        }
-
-
-        $timestamp = time();
-        $nonceStr = $this->createNonceStr(); // 创建随机字符串
-        // 这里参数的顺序要按照 key 值 ASCII 码升序排序
-        $string = "jsapi_ticket={$jsapiTicket}&noncestr={$nonceStr}&timestamp={$timestamp}&url={$url}";
-        $signature = sha1($string);
-
-        $signPackage = array(
-            "appId" => $this->_corpId,
-            "nonceStr" => $nonceStr,
-            "timestamp" => $timestamp,
-            "url" => $url,
-            "signature" => $signature,
-            "rawString" => $string
-        );
-
-        return $signPackage;
-    }
-
-
-    /**
-     * 获取ticket值
-     *
-     * @param bool $forceRefresh 是否强制刷新
-     * @return false|mixed
-     */
-    public function getJsApiTicket($forceRefresh = false) {
-        $token = $this->requestJsApiTicket();
-
-        return $token->ticket;
-    }
-
-    /**
-     * 请求ticket
-     *
-     * @return string 返回ticket值
-     */
-    public function requestJsApiTicket() {
-        // 获取access_token值
-        $accessToken = $this->getAccessToken();
-        $api = new QyWechatAPI();
-        $data = array(
-            'access_token' => $accessToken
-        );
-        // 发送请求获取ticket
-        $returnResultArr = json_decode($api->callApi('get', $this->_wxServiceUrl . '/cgi-bin/get_jsapi_ticket', $data));
-        if ($returnResultArr->errcode != '0') {
-
-            return false;
-        }
-
-        return $returnResultArr;
-    }
-
-    /**
-     * 获取access_token值
-     * 到期会自动重新获取、续期
-     *
-     * @param bool $forceRefresh 是否强制刷新
-     * @return false|mixed
-     */
-    public function getAccessToken($forceRefresh = false) {
-        $token = $this->requestAccessToken();
-
-
-        return $token->access_token;
-    }
-
-    /**
-     * 请求access_token
-     *
-     * @return string 返回access_token值
-     */
-    public function requestAccessToken() {
-        $api = new QyWechatAPI();
-        $data = array(
-            'corpid' => $this->_corpId,
-            'corpsecret' => $this->_corpSecret
-        );
-
-        $tokenArr = json_decode($api->callApi('get', $this->_wxServiceUrl . '/cgi-bin/gettoken', $data));
-        if (isset($tokenArr->access_token)) {
-            return $tokenArr;
-        }
-
-        return false;
-    }
-
-    /**
-     * 创建随机字符串
-     *
-     * @param int $length
-     * @return string
-     */
-    public function createNonceStr($length = 16) {
-        $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        $str = "";
-        for ($i = 0; $i < $length; $i++) {
-            $str .= substr($chars, mt_rand(0, strlen($chars) - 1), 1);
-        }
-
-        return $str;
     }
 }
