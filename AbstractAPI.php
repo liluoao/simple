@@ -1,16 +1,9 @@
 <?php
 
-/**抽象API层
- *
- * @Author: liluoao
- * @Created: 2017/8/2 17:19
- */
-
-namespace Rmlx\Business\Api;
 
 use GuzzleHttp\Client;
-use Rmlx\Business\Base;
-use Rmlx\Exceptions\ApiException;
+use Base;
+use ApiException;
 
 class AbstractAPI extends Base {
 
