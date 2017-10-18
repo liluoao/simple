@@ -70,6 +70,8 @@
 
 [25、Laravel Excel](https://github.com/wtbu703/simple/issues/25 "25、Laravel Excel")
 
+[26、Alipay与微信支付](https://github.com/wtbu703/simple/issues/26 "26、Alipay与微信支付")
+
 **About**
 ------------
 Email: liluoao@qq.com
