@@ -72,6 +72,8 @@
 
 [26、Alipay与微信支付](https://github.com/wtbu703/simple/issues/26 "26、Alipay与微信支付")
 
+[27、PHP字符串与二进制转换](https://github.com/wtbu703/simple/issues/27 "27、PHP字符串与二进制转换")
+
 **About**
 ------------
 Email: liluoao@qq.com
