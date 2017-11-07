@@ -1,35 +1,22 @@
 # simple #
 
-谈一些工作中的小收获或行业知识。网页版浏览：[点击这里](https://wtbu703.github.io/simple/)
+谈一些工作中的小收获或行业知识。
 
 >持续更新中，觉得不错的可以点个 `star` 或者订阅。
->文章在 [Issues](https://github.com/wtbu703/simple/issues) 中，也可以点击下面链接进行跳转
-
-**Blog**
-------------
-文章同步更新在我的博客：[李罗奥的博客](http://liluoao.blog.163.com/ "李罗奥的博客")
-
-**List:**
-------------
-可以按分类查询：
-- [PHP](https://github.com/wtbu703/simple/issues?q=label:php)
-- [MySQL](https://github.com/wtbu703/simple/issues?q=label:mysql)
-- [Laravel](https://github.com/wtbu703/simple/issues?q=label:laravel)
-- [javascript](https://github.com/wtbu703/simple/issues?q=label:javascript)
-- [tip](https://github.com/wtbu703/simple/issues?q=label:tip)
 
 ------------
-**详细列表：**
 
+**List**
+------------
 [1、关于排序值](https://github.com/wtbu703/simple/issues/1 "1、关于排序值")
 
-[2、Laravel的Session](https://github.com/wtbu703/simple/issues/2 "2、Laravel的Session")
+[2、Laravel Session](https://github.com/wtbu703/simple/issues/2 "2、Laravel的Session")
 
 [3、Postman Interceptor](https://github.com/wtbu703/simple/issues/3 "3、Postman Interceptor")
 
 [4、MySQL按条件计数](https://github.com/wtbu703/simple/issues/4 "4、MySQL按条件计数")
 
-[5、Laravel的Input Facade与Request Facade与Request](https://github.com/wtbu703/simple/issues/5 "5、Laravel的Input Facade与Request Facade与Request")
+[5、Laravel Input Facade与Request Facade与Request](https://github.com/wtbu703/simple/issues/5 "5、Laravel的Input Facade与Request Facade与Request")
 
 [6、关于代码风格规范](https://github.com/wtbu703/simple/issues/6 "6、关于代码风格规范")
 
@@ -43,7 +30,7 @@
 
 [11、计算两个文件的相对路径](https://github.com/wtbu703/simple/issues/11 "11、计算两个文件的相对路径")
 
-[12、Quicksort in PHP](https://github.com/wtbu703/simple/issues/12 "12、Quicksort in PHP")
+[12、QuickSort in PHP](https://github.com/wtbu703/simple/issues/12 "12、Quicksort in PHP")
 
 [13、Get File Extension](https://github.com/wtbu703/simple/issues/13 "13、Get File Extension")
 
@@ -75,8 +62,16 @@
 
 [27、PHP字符串与二进制转换](https://github.com/wtbu703/simple/issues/27 "27、PHP字符串与二进制转换")
 
+**Classification**
+------------
+- [PHP](https://github.com/wtbu703/simple/issues?q=label:php)
+- [MySQL](https://github.com/wtbu703/simple/issues?q=label:mysql)
+- [Laravel](https://github.com/wtbu703/simple/issues?q=label:laravel)
+- [Javascript](https://github.com/wtbu703/simple/issues?q=label:javascript)
+- [Tips](https://github.com/wtbu703/simple/issues?q=label:tip)
+
 **About**
 ------------
-Email: liluoao@qq.com
+Email: <a href=mailto:liluoao@qq.com>liluoao@qq.com</a>
 
 <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=NVlZVHVHWFlNG1Zb" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_02.png"/></a>
