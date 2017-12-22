@@ -1,9 +1,5 @@
 # simple #
 
-谈一些工作中的小收获或行业知识。
-
->持续更新中，觉得不错的可以点个 `star` 或者订阅。
-
 ------------
 
 **List**
@@ -61,6 +57,12 @@
 [26、Alipay与微信支付](https://github.com/wtbu703/simple/issues/26 "26、Alipay与微信支付")
 
 [27、PHP字符串与二进制转换](https://github.com/wtbu703/simple/issues/27 "27、PHP字符串与二进制转换")
+
+[28、支付宝授权第三方应用](https://github.com/wtbu703/simple/issues/28 "28、支付宝授权第三方应用")
+
+[29、微信被动回复用户消息](https://github.com/wtbu703/simple/issues/29 "29、微信被动回复用户消息")
+
+[30、微信硬件设备授权](https://github.com/wtbu703/simple/issues/30 "30、微信硬件设备授权")
 
 **Classification**
 ------------
