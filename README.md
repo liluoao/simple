@@ -1,5 +1,5 @@
 # simple #
-
+[![GitHub issues](https://img.shields.io/github/issues/wtbu703/simple.svg?style=plastic)](https://github.com/wtbu703/simple/issues) [![GitHub forks](https://img.shields.io/github/forks/wtbu703/simple.svg?style=plastic)](https://github.com/wtbu703/simple/network) [![GitHub stars](https://img.shields.io/github/stars/wtbu703/simple.svg?style=plastic)](https://github.com/wtbu703/simple/stargazers) [![GitHub license](https://img.shields.io/github/license/wtbu703/simple.svg?style=plastic)](https://github.com/wtbu703/simple/blob/master/LICENSE)
 ------------
 
 **List**
