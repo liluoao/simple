@@ -1,45 +1,26 @@
 <?php
+/**
+ * 获取AccessToken
+ *
+ * @Author: lla
+ * @Created: 2017/11/1 10:47
+ */
 
-use GuzzleHttp\Client;
+namespace Api;
+
 use Illuminate\Support\Facades\Cache;
 use ApiException;
 
 class AccessToken {
 
-    /**
-     * App ID.
-     *
-     * @var string
-     */
-    protected $corpId;
-
-    /**
-     * App secret.
-     *
-     * @var string
-     */
-    protected $corpSecret;
-
-    /**
-     * Cache.
-     *
-     * @var Cache
-     */
-    protected $cache;
+    private $token_params = [];
 
     /**
      * Cache Key.
      *
      * @var string
      */
-    protected $cacheKey;
-
-    /**
-     * http client
-     *
-     * @var Client
-     */
-    protected $http;
+    protected $cacheKey = '';
 
     /**
      * Response Json key name.
@@ -48,37 +29,34 @@ class AccessToken {
      */
     protected $tokenJsonKey = 'access_token';
 
-    //API
-    const API_TOKEN_GET = 'gettoken';
 
     /**
      * Constructor.
      *
-     * @param $corpId
-     * @param $corpSecret
-     * @param Cache $cache
+     * @param array $tokenParams
      */
-    public function __construct($corpId, $corpSecret, Cache $cache = null) {
-        $this->corpId = $corpId;
-        $this->corpSecret = $corpSecret;
-        $this->cache = $cache;
+    public function __construct($tokenParams = []) {
+        $this->setTokenParams($tokenParams);
+        $this->setCacheKey($tokenParams['cache_key']);
     }
 
     /**
-     * Get token from WeChat API.
+     * Get token from API.
      *
      * @param bool $forceRefresh
-     *
-     * @return string
+     * @return bool
+     * @throws ApiException
      */
     public function getToken($forceRefresh = false) {
         $cacheKey = $this->getCacheKey();
-        $cache = $this->getCache();
-        $cached = $cache::get($cacheKey);
+        $cached = Cache::get($cacheKey);
         if ($forceRefresh || empty($cached)) {
             $token = $this->getTokenFromServer();
-            // XXX: T_T... 7200 - 1500
-            $cache::put($cacheKey, $token[$this->tokenJsonKey], $token['expires_in'] - 1500);
+            if (!isset($token[$this->tokenJsonKey])) {
+                throw new ApiException(1000, '获取token失败');
+            }
+            //放入缓存
+            Cache::put($cacheKey, $token[$this->tokenJsonKey], $token['expires_in'] - 1500);
 
             return $token[$this->tokenJsonKey];
         }
@@ -87,87 +65,28 @@ class AccessToken {
     }
 
     /**
-     * Return the app id.
-     *
-     * @return string
-     */
-    public function getCorpId() {
-        return $this->corpId;
-    }
-
-    /**
-     * Return the secret.
-     *
-     * @return string
-     */
-    public function getCorpSecret() {
-        return $this->corpSecret;
-    }
-
-    /**
-     * Set cache instance.
-     *
-     * @param Cache $cache
-     *
-     * @return AccessToken
-     */
-    public function setCache(Cache $cache) {
-        $this->cache = $cache;
-
-        return $this;
-    }
-
-    /**
-     * Return the cache manager.
-     *
-     * @return Cache
-     */
-    public function getCache() {
-        return $this->cache ?: $this->cache = new Cache();
-    }
-
-    /**
-     * Get the access token from WeChat server.
+     * Get the access token from server.
      *
      * @return mixed|\Psr\Http\Message\ResponseInterface
      * @throws ApiException
      */
     public function getTokenFromServer() {
-        $params = [
-            'corpid' => $this->corpId,
-            'corpsecret' => $this->corpSecret
-        ];
-        $token = $this->getHttp()->request('GET', self::API_TOKEN_GET, [
-            'query' => $params,
-            'verify' => '../resources/assets/cacert.pem'
-        ])->getBody();
-        if (empty($token)) {
-            throw new ApiException(400, 'Request AccessToken fail. response: ' . json_encode($token, JSON_UNESCAPED_UNICODE));
+        $params = $this->getTokenParams();
+        $api = new AbstractAPI($params['base_uri']);
+        $url = $params['url'];
+        $method = $params['method']??'GET';
+        $tokenType = $params['tokenType'] ?? 'wechat';
+        unset($params['base_uri']);
+        unset($params['url']);
+        unset($params['method']);
+        $token = $api->callApi(strtoupper($method), $url, $params);
+        if ($tokenType === 'wechat') {
+            return json_decode($token, true);
+        } else {
+            $this->setCacheKey($tokenType);
+
+            return json_decode($token, true)['data'];
         }
-
-        return json_decode($token,true);
-    }
-
-    /**
-     * 获取Client
-     *
-     * @return Client
-     */
-    public function getHttp() {
-        return $this->http ?: $this->http = new Client(['base_uri' => config('app.work_weixin_uri')]);
-    }
-
-    /**
-     * Set the http instance.
-     *
-     * @param Client $http
-     *
-     * @return $this
-     */
-    public function setHttp(Client $http) {
-        $this->http = $http;
-
-        return $this;
     }
 
     /**
@@ -190,9 +109,24 @@ class AccessToken {
      */
     public function getCacheKey() {
         if (is_null($this->cacheKey)) {
-            return $this->corpId;
+            return '默认KEY';
         }
 
         return $this->cacheKey;
     }
+
+    /**
+     * @return array
+     */
+    public function getTokenParams() {
+        return $this->token_params;
+    }
+
+    /**
+     * @param array $token_params
+     */
+    public function setTokenParams($token_params) {
+        $this->token_params = $token_params;
+    }
+
 }
