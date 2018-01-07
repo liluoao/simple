@@ -64,6 +64,8 @@
 
 [30、微信硬件设备授权](https://github.com/wtbu703/simple/issues/30 "30、微信硬件设备授权")
 
+[31、Wechat Jump Game 指北](https://github.com/wtbu703/simple/issues/31 "31、Wechat Jump Game 指北")
+
 **Classification**
 ------------
 - [PHP](https://github.com/wtbu703/simple/issues?q=label:php)
