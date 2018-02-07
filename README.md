@@ -7,19 +7,11 @@
 
 **List**
 ------------
-[1、关于排序值](https://github.com/liluoao/simple/issues/1 "1、关于排序值")
-
 [2、Laravel Session](https://github.com/liluoao/simple/issues/2 "2、Laravel的Session")
-
-[3、Postman Interceptor](https://github.com/liluoao/simple/issues/3 "3、Postman Interceptor")
 
 [4、MySQL按条件计数](https://github.com/liluoao/simple/issues/4 "4、MySQL按条件计数")
 
 [5、Laravel Input Facade与Request Facade与Request](https://github.com/liluoao/simple/issues/5 "5、Laravel的Input Facade与Request Facade与Request")
-
-[6、关于代码风格规范](https://github.com/liluoao/simple/issues/6 "6、关于代码风格规范")
-
-[7、关于使用工具](https://github.com/liluoao/simple/issues/7 "7、关于使用工具")
 
 [8、MyISAM引擎与InnoDB引擎的区别](https://github.com/liluoao/simple/issues/8 "8、MyISAM引擎与InnoDB引擎的区别")
 
@@ -37,8 +29,6 @@
 
 [15、Laravel Eloquent ORM Relationship](https://github.com/liluoao/simple/issues/15 "15、Laravel Eloquent ORM Relationship")
 
-[16、如何架构千万级、亿级PV的平台](https://github.com/liluoao/simple/issues/16 "16、如何架构千万级、亿级PV的平台")
-
 [17、如何重构“箭头型”代码](https://github.com/liluoao/simple/issues/17 "17、如何重构“箭头型”代码")
 
 [18、Laravel Config](https://github.com/liluoao/simple/issues/18 "18、Laravel Config")
@@ -46,8 +36,6 @@
 [19、TINYINT(1) or ENUM( true , false)](https://github.com/liluoao/simple/issues/19 "19、TINYINT(1) or ENUM( true , false)")
 
 [20、ES6 Promise](https://github.com/liluoao/simple/issues/20 "20、ES6 Promise")
-
-[21、Vue.js Tips](https://github.com/liluoao/simple/issues/21 "21、Vue.js Tips")
 
 [22、PHP Web项目后端结构思考](https://github.com/liluoao/simple/issues/22 "22、PHP Web项目后端结构思考")
 
