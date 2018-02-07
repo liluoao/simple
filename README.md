@@ -69,6 +69,10 @@
 
 [31、Wechat Jump Game 指北](https://github.com/liluoao/simple/issues/31 "31、Wechat Jump Game 指北")
 
+[32、Laravel Queue](https://github.com/liluoao/simple/issues/32 "32、Laravel Queue")
+
+[33、Laravel Task Scheduling](https://github.com/liluoao/simple/issues/33 "33、Laravel Task Scheduling")
+
 **Classification**
 ------------
 - [PHP](https://github.com/liluoao/simple/issues?q=label:php)
