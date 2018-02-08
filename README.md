@@ -61,6 +61,8 @@
 
 [33、Laravel Task Scheduling](https://github.com/liluoao/simple/issues/33 "33、Laravel Task Scheduling")
 
+[34、Laravel Artisan](https://github.com/liluoao/simple/issues/34 "34、Laravel Artisan")
+
 **Classification**
 ------------
 - [PHP](https://github.com/liluoao/simple/issues?q=label:php)
