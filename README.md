@@ -3,7 +3,6 @@
 [![Email](https://img.shields.io/badge/%E9%82%AE%E7%AE%B1-liluoao%40qq.com-orange.svg?style=flat-square)](mailto:liluoao@qq.com)
 [![SegmentFault](https://img.shields.io/badge/SegmentFault-李罗奥-brightgreen.svg?style=flat-square)](https://segmentfault.com/u/liluoao)
 [![Juejin](https://img.shields.io/badge/掘金-李罗奥-blue.svg?style=flat-square)](https://juejin.im/user/5a19374cf265da4332274600)
-------------
 
 >夫夷以近，则游者众；险以远，则至者少。而世之奇伟、瑰怪，非常之观，常在于险远，而人之所罕至焉，故非有志者不能至也。有志矣，不随以止也，然力不足者，亦不能至也。有志与力，而又不随以怠，至于幽暗昏惑而无物以相之，亦不能至也。
 
@@ -67,6 +66,10 @@
 
 [35、Phalcon启动流程](https://github.com/liluoao/simple/issues/35 "35、Phalcon启动流程")
 
+[36、使用依赖管理--以Composer为例](https://github.com/liluoao/simple/blob/master/36.Use-Composer-Dependency-Management.md)
+
+[37、使用Phalcon](https://github.com/liluoao/simple/blob/master/37.Use-Phalcon-Framework.md)
+
 **Classification**
 ------------
 - [PHP](https://github.com/liluoao/simple/issues?q=label:php)
@@ -74,9 +77,6 @@
 - [Laravel](https://github.com/liluoao/simple/issues?q=label:laravel)
 - [Javascript](https://github.com/liluoao/simple/issues?q=label:javascript)
 - [Tips](https://github.com/liluoao/simple/issues?q=label:tip)
-
-**About**
-------------
-Email: <liluoao@qq.com>
+- [Phalcon](https://github.com/liluoao/simple/issues?q=label:phalcon)
 
 <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=NVlZVHVHWFlNG1Zb" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_02.png"/></a>
