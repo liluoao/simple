@@ -64,19 +64,10 @@
 
 [34、Laravel Artisan](https://github.com/liluoao/simple/issues/34 "34、Laravel Artisan")
 
-[35、Phalcon启动流程](https://github.com/liluoao/simple/issues/35 "35、Phalcon启动流程")
-
 [36、使用依赖管理--以Composer为例](https://github.com/liluoao/simple/blob/master/36.Use-Composer-Dependency-Management.md)
 
 [37、使用Phalcon](https://github.com/liluoao/simple/blob/master/37.Use-Phalcon-Framework.md)
 
-**Classification**
-------------
-- [PHP](https://github.com/liluoao/simple/issues?q=label:php)
-- [MySQL](https://github.com/liluoao/simple/issues?q=label:mysql)
-- [Laravel](https://github.com/liluoao/simple/issues?q=label:laravel)
-- [Javascript](https://github.com/liluoao/simple/issues?q=label:javascript)
-- [Tips](https://github.com/liluoao/simple/issues?q=label:tip)
-- [Phalcon](https://github.com/liluoao/simple/issues?q=label:phalcon)
+[38、Phalcon启动流程](https://github.com/liluoao/simple/blob/master/38.Phalcon-Start-Process.md)
 
 <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=NVlZVHVHWFlNG1Zb" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_02.png"/></a>
