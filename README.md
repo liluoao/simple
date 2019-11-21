@@ -1,10 +1,6 @@
 # simple #
 [![GitHub issues](https://img.shields.io/github/issues/liluoao/simple.svg?style=flat-square)](https://github.com/liluoao/simple/issues)
-[![Email](https://img.shields.io/badge/%E9%82%AE%E7%AE%B1-liluoao%40qq.com-orange.svg?style=flat-square)](mailto:liluoao@qq.com)
-[![SegmentFault](https://img.shields.io/badge/SegmentFault-李罗奥-brightgreen.svg?style=flat-square)](https://segmentfault.com/u/liluoao)
-[![Juejin](https://img.shields.io/badge/掘金-李罗奥-blue.svg?style=flat-square)](https://juejin.im/user/5a19374cf265da4332274600)
-
->夫夷以近，则游者众；险以远，则至者少。而世之奇伟、瑰怪，非常之观，常在于险远，而人之所罕至焉，故非有志者不能至也。有志矣，不随以止也，然力不足者，亦不能至也。有志与力，而又不随以怠，至于幽暗昏惑而无物以相之，亦不能至也。
+[![SegmentFault](https://img.shields.io/badge/SegmentFault-liluoao-brightgreen.svg?style=flat-square)](https://segmentfault.com/u/liluoao)
 
 **List**
 ------------
